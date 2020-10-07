@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="title"><h2>Задание No1</h2></div>
+    <div class="description">
+        <p>
+            <em>Задача:</em>
+            Создать приложение по переводу значения температуры между градусами цельсия,
+            фаренгейта и кельвина. 
+        </p>
+        <p>
+            <em>Входящие параметры:</em>
+            Значение температуры вместе с указанием шкалы (цельсий, фаренгейт или кельвин),
+            например: 26С, 299K, или 79F.
+        </p>
+        <p>
+            <em>Выходные данные:</em>    
+            Целые значения температур в JSON формате для всех шкал измерения, кроме указанной
+            во входящих параметрах, например:  {{example}} 
+        </p>
+        </div>
+    <div class="input">        
+        <span class="input-description"><em>Введите значиние температуры (Напр: 100C || 100K || 100F)</em></span>
+        <input type="text" placeholder="100C" [(ngModel)]="inputValue"/>
+        <button class="okButton" (click)="handleClick()">Ok</button>
+        <span class="errors" *ngIf="showErrorMsg">Ошибка вводных данных</span>
+             
+    </div>
+    <div class="output">Температуры: {{result}}</div>
+</div>

@@ -1,0 +1,28 @@
+.nav {
+    margin: 0px;
+    padding: 0px;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    position: sticky;
+    background-color: #EFEFEF;
+}
+
+.menu-item {
+    width: 100%;    
+    padding: 5px 30px;
+    display: inline-block;
+    text-decoration: none;    
+    font-size: 1.5em;
+    color: #626262;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+    transition: 1;
+}
